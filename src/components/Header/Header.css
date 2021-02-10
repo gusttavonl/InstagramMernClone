@@ -1,0 +1,56 @@
+.header{
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+.row{
+    padding-top: 7px;
+}
+
+.headerLogo{
+    width: 120px;
+}
+
+.headerInputButton{
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+}
+
+.headerInputButton p{
+    color: gray;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.headerSearchIcon{
+    color: lightgray; 
+    font-size: 14px;
+}
+
+.headerInput{
+    outline: none;
+    border: none;
+    position: absolute; /* posiciona de acordo com o elemento mais proximo */
+    background-color: transparent;
+    width: 250px;
+}
+
+.headerRight{
+    display: flex;
+    flex-direction: row;
+}
+.headerRight > .MuiSvgIcon-root{
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.headerRightAvatar{
+    margin-left: 20px;
+    font-size: 10px;
+    margin-top: -5px;
+}
