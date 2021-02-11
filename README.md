@@ -13,8 +13,12 @@ Clone completo fullstack da home do Instagram Web com Mern Stack ( MongoDb, Expr
 ## Imagens do Projeto
 ![image](https://user-images.githubusercontent.com/77861206/107554989-686a9480-6bb5-11eb-8228-ca64187d19d7.png)
 
-
-
+ Como funciona o crud neste app?
+ ├── POST: é um novo comentario
+ ├── GET: Sãos listagens de publicações
+ ├── PUT: é alterar a descrição da publicação 
+ ├── DELETE: é deletar um comentario
+    
 
 ## Como executar
 
