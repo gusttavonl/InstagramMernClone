@@ -1,22 +1,14 @@
 {
-  "name": "housicbackend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Back End Housic",
+  "description": "Back End Instagram",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Housic/HousicBackEnd.git"
-  },
   "author": "Gustavo Noronha",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Housic/HousicBackEnd/issues"
-  },
-  "homepage": "https://github.com/Housic/HousicBackEnd#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",

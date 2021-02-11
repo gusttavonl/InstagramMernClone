@@ -5,7 +5,7 @@ const videoController = require('./controller/video.controller');
 const routes = express.Router(); // usado para fazer as rotas
 
 routes.get('/', function(req,res){
-    res.json({message: "Bem vindo Dev ao back end da Housic, se voce viu isso voce trabalha aqui, entao parabens :)"})
+    res.json({message: "Bem vindo Dev ao back end do Instagram Mern Clone"})
 })
 
 routes.get('/usuario', usuarioController.index)
