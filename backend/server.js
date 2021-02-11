@@ -7,7 +7,7 @@ const routes = require('./src/routes')
 
 const app = express()
 
-mongoose.connect('mongodb://localhost:27017/Housic', { // tudo padrao
+mongoose.connect('mongodb://localhost:27017/InstagramMernClone', { // tudo padrao
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false

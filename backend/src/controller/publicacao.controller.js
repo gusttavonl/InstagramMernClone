@@ -1,23 +1,23 @@
 
-const Video = require("../model/video.model")
+const Publicacao = require("../model/publicacao.model")
 
 module.exports = {
     async index(req, res) {
-        const video = await Video.find();
+        const publicacao = await Publicacao.find();
 
-        res.json(video)
+        res.json(publicacao)
     },
 
     async detail(req, res) {
         const { _id } = req.params
-        const video = await Video.findOne({ _id });
+        const publicacao = await Publicacao.findOne({ _id });
 
-        res.json(video)
+        res.json(publicacao)
     },
 
     async delete(req, res) {
         const { _id } = req.params
-        const video = await Video.findByIdAndDelete({ _id });
+        const publicacao = await Publicacao.findByIdAndDelete({ _id });
 
         res.json({ Message: "Excluido com Sucesso" })
     },
@@ -27,7 +27,6 @@ module.exports = {
             titulo,
             descricao,
             data,
-            video,
             imagem,
             usuario
         } = req.body;
@@ -38,12 +37,11 @@ module.exports = {
             titulo,
             descricao,
             data,
-            video,
             imagem,
             usuario
         } // vars vindo do corpo
-        const videoCreate = await Video.create(dataCreate) // criando o video atraves das var que vem do corpo
-        return res.status(200).json(videoCreate)
+        const publicacaoCreate = await Publicacao.create(dataCreate) // criando o publicacao atraves das var que vem do corpo
+        return res.status(200).json(publicacaoCreate)
 
     },
 
@@ -53,7 +51,6 @@ module.exports = {
             titulo,
             descricao,
             data,
-            video,
             imagem,
             usuario } = req.body;
 
@@ -64,12 +61,11 @@ module.exports = {
             titulo,
             descricao,
             data,
-            video,
             imagem,
             usuario
         } // vars vindo co corpo
-        videoUpdate = await Video.findByIdAndUpdate({ _id }, dataUpdate, { new: true }) // criando o video atraves das var que vem do corpo
-        return res.status(200).json(videoUpdate)
+        publicacaoUpdate = await Publicacao.findByIdAndUpdate({ _id }, dataUpdate, { new: true }) // criando o publicacao atraves das var que vem do corpo
+        return res.status(200).json(publicacaoUpdate)
 
     }
 }

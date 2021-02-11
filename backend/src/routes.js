@@ -1,6 +1,6 @@
 const express = require('express');
 const usuarioController = require('./controller/usuario.controller');
-const videoController = require('./controller/video.controller');
+const publicacaoController = require('./controller/publicacao.controller');
 
 const routes = express.Router(); // usado para fazer as rotas
 
@@ -15,10 +15,10 @@ routes.delete('/usuario/:_id', usuarioController.delete)
 routes.put('/usuario', usuarioController.update)
 
 
-routes.get('/video', videoController.index)
-routes.post('/video', videoController.create)
-routes.get('/video/:_id', videoController.detail)
-routes.delete('/video/:_id', videoController.delete)
-routes.put('/video', videoController.update)
+routes.get('/publicacao', publicacaoController.index)
+routes.post('/publicacao', publicacaoController.create)
+routes.get('/publicacao/:_id', publicacaoController.detail)
+routes.delete('/publicacao/:_id', publicacaoController.delete)
+routes.put('/publicacao', publicacaoController.update)
 
 module.exports = routes // suficiente para exportar todas as rotas
