@@ -48,6 +48,6 @@ $ npm install
 $ npm start
 ```
 
-## OBS: Lembrando que voce precisa ter uma conexão mongo db com para executar o back end e entao ele gerar atraves dos models as collections
+##### OBS: Lembrando que voce precisa ter uma conexão mongo db com para executar o back end e entao ele gerar atraves dos models as collections
 
-Bom aprendizado.<br/>
+####Bom aprendizado.<br/>
