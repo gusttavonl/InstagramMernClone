@@ -53,3 +53,24 @@
 .feedPubFooterRight > .MuiSvgIcon-root{
     font-size: 27px;
 }
+
+.feedPubComentsInput{
+    width: 450px;
+    border: none;
+    outline: none;
+}
+
+.feedPubComentsButton{
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: blue;
+    background-color: transparent;
+}
+
+
+
+.feedPubComentsComent{
+    margin-left: -20px;
+    font-size: 14px;
+}

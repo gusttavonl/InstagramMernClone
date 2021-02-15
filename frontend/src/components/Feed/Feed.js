@@ -5,6 +5,7 @@ import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import Chat from '@material-ui/icons/Chat';
 import Telegram from '@material-ui/icons/Telegram';
 import BookmarkBorder from '@material-ui/icons/BookmarkBorder';
+import EmojiEmotions from '@material-ui/icons/EmojiEmotions';
 import './Feed.css';
 
 function Feed() {
@@ -29,6 +30,34 @@ function Feed() {
                             </div>
                             <div className="feedPubFooterRight">
                                 <BookmarkBorder />
+                            </div>
+
+
+                        </div>
+                        <div className="feedPubComents">
+                            <div className="row">
+                                <div className="col-12">
+                                    <div className="row">
+                                        <div className="col-3">
+                                            <h6 className="feedPubComentsUser">gustavonoronha0</h6>
+                                        </div>
+                                        <div className="col-9">
+                                            <p className="feedPubComentsComent">Comentando um Cometario</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-1">
+                                    <EmojiEmotions />
+                                </div>
+                                <div className="col-9">
+                                    <input className="feedPubComentsInput" placeholder="Escreva um Comentario" />
+                                </div>
+                                <div className="col-2">
+                                    <button className="feedPubComentsButton">Publicar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
