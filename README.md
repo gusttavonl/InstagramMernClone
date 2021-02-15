@@ -21,7 +21,7 @@ Clone completo fullstack da home do Instagram Web com Mern Stack ( MongoDb, Expr
 
       ├── POST: é um novo comentario
       ├── GET: Sãos listagens de publicações e comentarios
-      ├── PUT: é alterar o comentario da publicação 
+      ├── PUT: é a curtida na publicação, se esta ou nao curtida ela seta no campo da collection
       ├── DELETE: é deletar um comentario
   
  O que ainda deve ser implementado?
