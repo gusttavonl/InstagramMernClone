@@ -29,7 +29,8 @@ module.exports = {
             data,
             imagem,
             usuario,
-            comentario
+            comentario,
+            curtida
         } = req.body;
 
         let dataCreate = {};
@@ -40,7 +41,8 @@ module.exports = {
             data,
             imagem,
             usuario,
-            comentario
+            comentario,
+            curtida
         } // vars vindo do corpo
         const publicacaoCreate = await Publicacao.create(dataCreate) // criando o publicacao atraves das var que vem do corpo
         return res.status(200).json(publicacaoCreate)
@@ -55,7 +57,8 @@ module.exports = {
             data,
             imagem,
             usuario,
-            comentario
+            comentario,
+            curtida
         } = req.body;
 
         let dataUpdate = {};
@@ -67,7 +70,8 @@ module.exports = {
             data,
             imagem,
             usuario,
-            comentario
+            comentario,
+            curtida
         } // vars vindo co corpo
         publicacaoUpdate = await Publicacao.findByIdAndUpdate({ _id }, dataUpdate, { new: true }) // criando o publicacao atraves das var que vem do corpo
         return res.status(200).json(publicacaoUpdate)
