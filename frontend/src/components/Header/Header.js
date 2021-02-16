@@ -26,7 +26,7 @@ function Header() {
                     <div className="headerRight">
                         <Home />
                         <Send />
-                        <Explore />
+                        <Explore  />
                         <Favorite />
                         <Avatar className="headerRightAvatar" src={"https://avatars.githubusercontent.com/u/77861206?s=460&u=34c77898a2036ccc169a2a4dc86c9d1e5faa1abc&v=4"}/>
                     </div>
