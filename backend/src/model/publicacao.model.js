@@ -6,7 +6,8 @@ const DataSchema = new mongoose.Schema({
     data: Date,
     imagem: String,
     usuario: String,
-    comentario: String
+    comentario: String,
+    curtida: String
 
 })
 
