@@ -49,7 +49,7 @@ git clone https://github.com/GustavoNoronha0/InstagramMernClone
 $ cd InstagramMernClone
 $ cd backend
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 ##### OBS: Lembrando que voce precisa ter uma conexão mongo db com para executar o back end e entao ele gerar atraves dos models as collections
