@@ -39,7 +39,7 @@ function Feed() {
             _id,
             curtida
         }
-        var response = await api.put('publicacao' + data)
+        var response = await api.put('publicacao', data)
     }
 
     async function alterCurtidaNao(_id) {
@@ -49,7 +49,7 @@ function Feed() {
             _id,
             curtida
         }
-        var response = await api.put('publicacao' + data)
+        var response = await api.put('publicacao', data)
     }
     return (
         <div className="feed">
